@@ -4,11 +4,11 @@ class Lab4
 {
     public function task1()
     {
-        $mainstrmain_str = 'Many people admire the paintings and sculptures that artists create.';
-        $mainstrsub_str = 'people';
+        $str = 'aaa bbaabbb ccaac ss aass';
+        $substr = 'aa';
 
-        if (strpos($mainstrmain_str, $mainstrsub_str, strlen($mainstrmain_str) / 3 * 2)) {
-            echo 'Последовательность найдена';
+        if ($str && $substr) {
+            echo 'Последнее подвхождение строки -'.strpos($str, $substr);
         } else {
             echo '<span style="color:red;">Нет такой последовательности</span>';
         }
